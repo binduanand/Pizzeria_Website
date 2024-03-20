@@ -175,9 +175,11 @@
 .banner-section figure img{
     width: 40%;
 }
-.banner-section figure {
+.banner-section figure{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 }
 }
 
