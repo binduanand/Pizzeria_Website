@@ -113,6 +113,7 @@
 }
 .banner-section figcaption{
     font-size: 0.5rem;
+    align-self: center;
 }
 .btns button{
     font-size: 0.8rem;
@@ -173,7 +174,7 @@
         flex-direction: column;
     }
 .banner-section figure img{
-    width: 40%;
+    width: 30%;
 }
 .banner-section figure{
     width: 100%;
