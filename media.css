@@ -151,6 +151,7 @@
 .bestseller-items img{
     width: 150px;
     height: 150px;
+    margin-top: 3px;
 }
 .swiper{
     width: 400px;
@@ -175,6 +176,7 @@
 .banner-section{
     flex-direction: column;
     justify-content:space-around;
+    height:100%;
 }
 .banner-section figure img{
     width: 30%;
