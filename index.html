@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable= no">
+    <title>Pizzeria</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <a href="index.html"  class="logo"><div></div></a>
+        <div>
+            <div class="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
+                <div class="nav-bar">
+                    <ul class="nav-bar-menu">
+                        <a class="nav-a" href="foods.html">Our Food</a>
+                        <a class="nav-a" href="#bestsellers">Bestsellers</a>
+                        <a class="nav-a" href="#reviews">Reviews</a>
+                        <a class="nav-a" href="#faq">FAQs</a>
+                    </ul>
+                    <div class="login-signup">
+                        <h4><a href="#">Login | Signup</a></h4>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </nav>
+    <div class="overlay"></div>
+        <!-- navbar -->
+
+        <!-- cart -->
+        <div class="cart">
+            <div class="cart-count">0</div>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="cart-modal">
+            <button id="cart-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="cart-heading">YOUR CART</div>
+            <div class="cart-modal-content">
+                 IS EMPTY
+                <button id="start-shopping">Add items</button>
+            </div>
+            <div class="place-order-section">
+                <div class="final-cost"></div>
+                <button class="place-order">Place Order</button>
+            </div>
+        </div>
+            
+        </div>
+        <!-- cart -->
+
+        <!-- login modal -->
+        <div class="modal">
+            <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="btns">
+                <button id="login-btn" class="btn-active">Login</button>
+                <button id="signup-btn" class="">Signup</button>
+            </div>
+
+            <form class="login-form">
+                <div><input type="text" placeholder="Enter Email ID"></div>
+                <div><input type="password" placeholder="Enter Password "></div>
+                <div class="rem-forpass">
+                    <div>
+                        <input type="checkbox" name="rem-me">
+                        <label for="rem-me">Remember Me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div><button>Login</button></div>
+            </form>
+
+            <form class="signup-form">
+                <div><input type="text" placeholder="Enter Email ID"></div>
+                <div><input type="password" placeholder="Enter Password "></div>
+                <div><input type="password" placeholder="Confirm Password "></div>
+                <div class="rem-forpass">
+                    <div>
+                        <input type="checkbox" name="rem-me">
+                        <label for="rem-me">Remember Me</label>
+                    </div>
+                    <a href="#" id="already-account">Already have an account?</a>
+                </div>
+                <div><button>Sign Up</button></div>
+            </form>
+        </div>
+        <!-- login modal -->
+
+        <!-- hero-section -->
+        <div class="hero-section">
+            <div class="hero-images">
+                <img src="images/image1.jpg" alt="">
+                <img src="images/img2.jpg" alt="">
+                <img src="images/img3.jpg" alt="">
+                <img src="images/image4.jpg" alt="">
+                <img src="https://images.unsplash.com/photo-1587848882602-f7a1638c4cca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU2fHxwaXp6YXxlbnwwfDF8MHx8fDA%3D" alt="">
+            </div>
+            <div class="banner">
+                <h1 data-aos="fade-right" data-aos-duration="500">Indulge in the Irresistible Magic of Pizzas!</h1>
+                <div class="banner-section">
+                    <figure data-aos="zoom-in" data-aos-delay="500" data-aos-duration="300">
+                        <img src="images/ingrediats.png">
+                        <figcaption>We meticulously source the freshest, premium ingredients — from locally grown vegetables to top-quality meats — to create the distinctive flavors that define our pizzas.</figcaption>
+                    </figure>
+                    <figure data-aos="zoom-in" data-aos-delay="700" data-aos-duration="300">
+                        <img src="images/woodfire.png" >
+                        <figcaption>Immerse yourself in the authentic taste of our pizzas, crafted with expertise in traditional wood-fired ovens. This time-honored method guarantees a perfect, crispy crust and a unique, delightful experience.</figcaption>
+                    </figure>
+                    <figure data-aos="zoom-in" data-aos-delay="900" data-aos-duration="300">
+                        <img src="images/chef.png">
+                        <figcaption>Our skilled chefs, driven by passion and culinary expertise, handcraft each pizza with precision. The result is a symphony of flavors that captivates your taste buds with every bite.</figcaption>
+                    </figure>
+                </div>
+            </div>      
+        </div>
+        <!-- hero-section -->
+
+        <!-- Bestsellers -->
+        <div class="bestsellers" id="bestsellers">
+            <h1 data-aos="slide-up" data-aos-duration="500"  data-aos-once="true" data-aos-easing="ease-in">Bestsellers</h1>
+            <div class="bestseller-items">
+                <figure data-aos="flip-right" data-aos-duration="1000" >
+                    <img src="https://i.pinimg.com/236x/1e/33/61/1e336162c6172fdb30da0449f1bfd71d.jpg">
+                    <figcaption>Paneer Tikka Pizza </figcaption>
+                    
+                </figure>
+                <figure data-aos="flip-right" data-aos-duration="1000"  >
+                    <img src="https://i.pinimg.com/236x/87/68/1e/87681e1401c66483aba91cab27794769.jpg">
+                    <figcaption>Loaded Supreme Pizza</figcaption>
+                    
+                </figure>
+                <figure data-aos="flip-right" data-aos-duration="1000"  >
+                    <img src="https://i.pinimg.com/236x/7c/d6/b1/7cd6b1cc3d42bdc532436e297ace268b.jpg">
+                    <figcaption>Garlic Knots</figcaption>
+                    
+                </figure>
+                <figure data-aos="flip-right" data-aos-duration="1000" >
+                    <img src="https://i.pinimg.com/236x/8f/fa/ae/8ffaae90b581cdef430c466379c216ec.jpg">
+                    <figcaption>Choco Lava Cake</figcaption>
+                    
+                </figure>
+            </div>
+            <a href="foods.html" class="view-menu">View Full Menu <i class="fa-solid fa-caret-right"></i></a>
+        </div>
+        <!-- Bestsellers -->
+
+        <!-- Reviews -->
+        <div class="reviews" id="reviews">
+            <h1 data-aos="slide-up" data-aos-duration="500"  data-aos-easing="ease-in">Reviews</h1>
+            <div class="swiper mySwiper" data-aos="zoom-out" data-aos-duration="1000">
+                <div class="review-cards swiper-wrapper">
+                    <div class="swiper-slide rev-card">
+                        <div class="user">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Ananya yegwyr</span>
+                        </div>
+                        <div class="user-review">
+                            Absolutely love the pizzas here! The crust is perfectly crispy, and the toppings are always fresh and flavorful.
+                        </div>
+                    </div>
+                    <div class="swiper-slide rev-card" >
+                        <div class="user">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Rajesh yegwyr</span>
+                        </div>
+                        <div class="user-review">
+                            Ordered the Loaded Supreme Pizza, and it was fantastic! Generous toppings and the perfect amount of sauce. 10/10!
+                        </div>
+                    </div>
+                    <div class="swiper-slide rev-card">
+                        <div class="user">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Vikram yegwyr</span>
+                        </div>
+                        <div class="user-review">
+                            Great value for money! The portion sizes are generous, and the quality of the food is consistently excellent.
+                        </div>
+                    </div>
+                    <div class="swiper-slide rev-card">
+                        <div class="user">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Aisha yegwyr</span>
+                        </div>
+                        <div class="user-review">
+                            Had a fantastic experience! The Paneer Tikka Pizza was heavenly, and the service was great. Will definitely order again.
+                        </div>
+                    </div>
+                    <div class="swiper-slide rev-card">
+                        <div class="user">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Nisha yegwyr</span>
+                        </div>
+                        <div class="user-review">
+                            The garlic knots are addictive! Couldn't get enough of them. Great food and friendly service.
+                        </div>
+                    </div>
+                    <div class="swiper-slide rev-card">
+                        <div class="user">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Vivek yegwyr</span>
+                        </div>
+                        <div class="user-review">
+                            Best pizza in town hands down! Every bite is a burst of deliciousness. Highly recommend trying their specialty pizzas.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- Reviews -->
+
+        <!-- FAQs -->
+        <div class="faq" id="faq">
+            <h1 data-aos="slide-up" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in">FAQs</h1>
+            <ul class="faq-section">
+                <li class="faq-question" data-aos="fade-up" data-aos-duration="300" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+                    <label for="first">What are your opening hours?<span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="first" checked>
+                    <div class="faq-content">
+                        <p> We are open 11AM - 11PM all days of the week </p>
+                    </div>
+                </li>
+                <li class="faq-question" data-aos="fade-up" data-aos-duration="300" data-aos-delay="600" data-aos-anchor-placement="top-bottom"> 
+                    <label for="second">Can I customize my pizza with specific toppings?<span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="second">
+                    <div class="faq-content">
+                        <p>Absolutely! We offer a wide range of toppings to customize your pizza just the way you like it.</p>
+                    </div>
+                </li>
+                <li class="faq-question" data-aos="fade-up" data-aos-duration="300" data-aos-delay="700" data-aos-anchor-placement="top-bottom">
+                    <label for="third">Do you offer gluten-free pizza options?<span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="third">
+                    <div class="faq-content">
+                        <p> Yes, we do offer gluten-free pizza options! </p>
+                    </div>
+                </li>
+                <li class="faq-question" data-aos="fade-up" data-aos-duration="300" data-aos-delay="800" data-aos-anchor-placement="top-bottom">
+                    <label for="fourth">Can I modify or cancel my order after it's been placed?<span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="fourth">
+                    <div class="faq-content">
+                        <p>Once an order has been placed, modifications or cancellations may not be possible, especially if the order is already in progress or out for delivery. However, we encourage customers to contact us as soon as possible if they need to make any changes to their order. Our team will do their best to accommodate your request whenever feasible. </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- FAQs -->
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="useful-links">
+                <h3>USEFUL LINKS</h3>
+                <a href="index.html">HOME</a>
+                <a href="foods.html">Our Food </a>
+                <a href="#bestsellers">Bestsellers </a>
+                <a href="#reviews">Reviews </a>
+                <a href="#faq">FAQs</a>
+            </div>
+            <div class="contact-us">
+                <h3>CONTACT US</h3>
+                <p>Phone no. - 81275646783908</p>
+                <p>Email - pizzeria.pizzeria.com</p>
+                <p>Address - #87678, Kormangla , Bangalore</p>
+            </div>
+        </div>
+        <!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({once:true,anchorPlacement: 'top-bottom'});
+    </script>
+    <script src="cart.js"></script>
+</body>
+</html>

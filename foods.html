@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable= no">
+    <title>Pizzeria</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <a href="index.html"  class="logo" style="z-index: 2000;"><div></div></a>
+        <div>
+            <div class="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
+                <div class="nav-bar">
+                    <ul class="nav-bar-menu">
+                        <a href="foods.html">Our Food</a>
+                        <a href="index.html#bestsellers">Bestsellers</a>
+                        <a href="index.html#reviews">Reviews</a>
+                        <a href="index.html#faq">FAQs</a>
+                    </ul>
+                    <div class="login-signup">
+                        <h4><a href="#">Login | Signup</a></h4>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- cart -->
+        <div class="cart">
+            <div class="cart-count">0</div>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="cart-modal">
+            <button id="cart-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="cart-heading">YOUR CART</div>
+            <div class="cart-modal-content">
+                 IS EMPTY
+                <button id="start-shopping">Add items</button>
+            </div>
+            <div class="place-order-section">
+                <div class="final-cost"></div>
+                <button class="place-order">Place Order</button>
+            </div>
+        </div>
+    <!-- cart -->
+
+      <!-- login modal -->
+      <div class="modal">
+        <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="btns">
+            <button id="login-btn" class="btn-active">Login</button>
+            <button id="signup-btn" class="">Signup</button>
+        </div>
+
+        <form class="login-form">
+            <div><input type="text" placeholder="Enter Email ID"></div>
+            <div><input type="password" placeholder="Enter Password "></div>
+            <div class="rem-forpass">
+                <div>
+                    <input type="checkbox" name="rem-me">
+                    <label for="rem-me">Remember Me</label>
+                </div>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div><button>Login</button></div>
+        </form>
+
+        <form class="signup-form">
+            <div><input type="text" placeholder="Enter Email ID"></div>
+            <div><input type="password" placeholder="Enter Password "></div>
+            <div><input type="password" placeholder="Confirm Password "></div>
+            <div class="rem-forpass">
+                <div>
+                    <input type="checkbox" name="rem-me">
+                    <label for="rem-me">Remember Me</label>
+                </div>
+                <a href="#" id="already-account">Already have an account?</a>
+            </div>
+            <div><button>Sign Up</button></div>
+        </form>
+    </div>
+    <!-- login modal -->
+    <!--food menu-->
+    <div class="food-section">
+        <h1 data-aos="fade-right" data-aos-duration="500">Veg Pizzas</h1>
+        <div class="veg" id="veg_pizza">
+            <div class="item" data-aos="flip-down" data-aos-delay="200">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/0a/34/c1/0a34c17ac88f93878b0d3253ffd39e1f.jpg" >
+                    <figcaption><span>Margherita Pizza(10")</span><span>₹<b class="cost">230</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Fresh tomato sauce, creamy mozzarella, basil, and olive oil come together on a crispy crust.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="300">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/1e/33/61/1e336162c6172fdb30da0449f1bfd71d.jpg" >
+                    <figcaption><span>Panner Tikka Pizza(10")</span><span>₹<b class="cost">330</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <i class="fa-solid fa-star"></i>
+                <p> Juicy paneer marinated in aromatic spices, paired with vibrant bell peppers, onions, and a hint of tangy sauce, all on top of a crispy crust</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="400">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/98/7e/42/987e42caf6f3f7e8f38ed3aa8186bb12.jpg" >
+                    <figcaption><span>Veggie Loaded Pizza(10")</span><span>₹<b class="cost">280</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Bursting with colorful bell peppers, panner, paprika, onions and olives in each bite.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="500">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/9e/68/4d/9e684da1c0b139e25685e3dcd508601c.jpg" >
+                    <figcaption><span>Tandoori Mushroom Pizza(10")</span><span>₹<b class="cost">330</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                       <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Experience the tantalizing blend of earthy mushrooms marinated in aromatic tandoori spices, paired with creamy cheese and topped with onions.</p>
+            </div>
+        </div>
+
+        <h1 data-aos="fade-right" data-aos-duration="500">Non-Veg Pizzas</h1>
+        <div class="nonveg" id="non_veg_pizza">
+            <div class="item" data-aos="flip-down" data-aos-delay="200">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/e2/94/b0/e294b00e985dda085b8d0349127907d7.jpg" >
+                    <figcaption><span>Chicken Tikka Pizza(10")</span><span>₹<b class="cost">380</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Juicy chicken tikka, melted cheese, and crispy crust combine for a flavor-packed experience.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="300">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/3f/87/55/3f875599c7794470d040b35d290343f7.jpg" >
+                    <figcaption><span>BBQ Chicken Pizza(10")</span><span>₹<b class="cost">330</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                       <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p> Tangy BBQ sauce, tender chicken, melted cheese, and a crispy crust create a savory sensation.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="400">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/87/68/1e/87681e1401c66483aba91cab27794769.jpg" >
+                    <figcaption><span>Loaded Supreme Pizza(10")</span><span>₹<b class="cost">280</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <i class="fa-solid fa-star"></i>
+                <p>Packed with savory chicken, an array of toppings, melted cheese, and a crispy crust for an explosion of flavor.</p>
+            </div>
+        </div>
+
+        <h1 data-aos="fade-right" data-aos-duration="500">Pastas</h1>
+        <div class="nonveg" id="pastas">
+            <div class="item" data-aos="flip-down" data-aos-delay="200">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/00/22/b9/0022b9ae4cff08e1cdfd6eecc739107a.jpg" >
+                    <figcaption>
+                        <span>Red Sauce Pasta(Veg)</span>
+                        <span>₹<b class="cost">320</b></span>
+                    </figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Classic spaghetti noodles drenched in a rich, savory red sauce, a timeless favorite for pasta lovers.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="300">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/b2/22/e5/b222e55a32c0e801694b10b5696eecb4.jpg" >
+                    <figcaption>
+                        <span>White Sauce Pasta(Veg)</span>
+                        <span>₹<b class="cost">320</b></span>
+                    </figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p> Silky smooth strands of spaghetti coated in a creamy, indulgent white sauce, a decadent twist on a traditional favorite.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="400">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/88/f1/89/88f189f71f0b474ba59fdb8d493f0027.jpg" >
+                    <figcaption>
+                        <span>Pesto Pasta(Veg)</span>
+                        <span>₹<b class="cost">320</b></span>
+                    </figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Tender spaghetti noodles tossed in vibrant, herbaceous pesto sauce, offering a burst of fresh flavors in every bite.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="200">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/00/22/b9/0022b9ae4cff08e1cdfd6eecc739107a.jpg" >
+                    <figcaption>
+                        <span>Red Sauce Pasta(Non-Veg)</span>
+                        <span>₹<b class="cost">350</b></span>
+                    </figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Classic spaghetti noodles drenched in a rich, savory red sauce, a timeless favorite for pasta lovers.</p>
+            </div>
+            
+            <div class="item" data-aos="flip-down" data-aos-delay="300">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/b2/22/e5/b222e55a32c0e801694b10b5696eecb4.jpg" >
+                    <figcaption>
+                        <span>White Sauce Pasta(Non-Veg)</span>
+                        <span>₹<b class="cost">350</b></span>
+                    </figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p> Silky smooth strands of spaghetti coated in a creamy, indulgent white sauce, a decadent twist on a traditional favorite.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="400">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/88/f1/89/88f189f71f0b474ba59fdb8d493f0027.jpg" >
+                    <figcaption>
+                        <span>Pesto Pasta(Non-Veg)</span>
+                        <span>₹<b class="cost">350</b></span>
+                    </figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Tender spaghetti noodles tossed in vibrant, herbaceous pesto sauce, offering a burst of fresh flavors in every bite.</p>
+            </div>
+        </div>
+
+        <h1 data-aos="fade-right" data-aos-duration="500">Sides</h1>
+        <div class="nonveg" id="sides">
+            <div class="item" data-aos="flip-down" data-aos-delay="200">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/c0/9e/3d/c09e3dec2873ca66e4d270200681afd2.jpg" >
+                    <figcaption><span>Garlic Bread</span><span>₹<b class="cost">200</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Crispy on the outside, soft on the inside, and infused with aromatic garlic butter for a classic side dish.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="300">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/0e/c9/dc/0ec9dc764fd953371dabcd7f90843f83.jpg" >
+                    <figcaption><span>Cheese Garlic Bread</span><span>₹<b class="cost">250</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p> Irresistibly cheesy and garlicky, this bread is a delightful twist on the classic garlic bread, perfect for cheese lovers.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="400">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/7c/d6/b1/7cd6b1cc3d42bdc532436e297ace268b.jpg" >
+                    <figcaption><span>Garlic Knots</span><span>₹<b class="cost">250</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <i class="fa-solid fa-star"></i>
+                <p>Soft, fluffy knots of bread, brushed with garlic butter and sprinkled with herbs, offering a delectable garlic-infused snack.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="500">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/bb/15/56/bb15566d920c7058dc87bacc0ebf1867.jpg" >
+                    <figcaption><span>Fries</span><span>₹<b class="cost">180</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Crispy golden fries, seasoned to perfection and served hot for a satisfying side dish or snack.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="500">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/23/cb/11/23cb1170eecb1fa4449369226891e52d.jpg" >
+                    <figcaption><span>Wedges</span><span>₹<b class="cost">180</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Thick-cut potato wedges, perfectly seasoned and fried to perfection, offering a flavorful accompaniment to any meal.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="600">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/53/18/4e/53184eed94c47e5f009f58804c6fa44d.jpg" >
+                    <figcaption><span>Jalapeno Cheesy Bites</span><span>₹<b class="cost">220</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Spicy jalapeno peppers stuffed with creamy cheese, breaded and fried to crispy perfection, offering a zesty and indulgent appetizer."</p>
+            </div>
+        </div>
+
+        <h1 data-aos="fade-right" data-aos-duration="500">Desserts</h1>
+        <div class="nonveg" id="desserts">
+            <div class="item" data-aos="flip-down" data-aos-delay="200">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/8f/fa/ae/8ffaae90b581cdef430c466379c216ec.jpg" >
+                    <figcaption><span>Choco Lava Cake</span><span>₹<b class="cost">250</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <i class="fa-solid fa-star"></i>
+                <p>A decadent chocolate cake with a molten chocolate center, served warm for an indulgent dessert experience.</p>
+            </div>
+            <div class="item" data-aos="flip-down" data-aos-delay="300">
+                <figure>
+                    <img src="https://i.pinimg.com/236x/f5/01/11/f501114356e36d6c7453ddfa7d07f840.jpg" >
+                    <figcaption><span>Tiramisu</span><span>₹<b class="cost">300</b></span></figcaption>
+                    <button class="add_to_cart">ADD TO CART</button>
+                    <div class="quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span>1</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                </figure>
+                <p>Creamy mascarpone cheese, espresso-infused layers, and a hint of cocoa, a classic Italian treat.</p>
+            </div>
+        </div>
+    </div>
+    <!--food menu-->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="useful-links">
+            <h3>USEFUL LINKS</h3>
+            <a href="index.html">HOME</a>
+            <a href="foods.html">Our Food </a>
+            <a href="#bestsellers">Bestsellers </a>
+            <a href="#reviews">Reviews </a>
+            <a href="#faq">FAQs</a>
+        </div>
+        <div class="contact-us">
+            <h3>CONTACT US</h3>
+            <p>Phone no. - 81275646783908</p>
+            <p>Email - pizzeria.pizzeria.com</p>
+            <p>Address - #87678, Kormangla , Bangalore</p>
+        </div>
+    </div>
+    <!-- footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({once:true,anchorPlacement: 'top-bottom'});
+    </script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
