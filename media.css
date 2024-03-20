@@ -182,7 +182,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
+.bestseller-items img{
+        width: 100px;
+        height: 100px;
+        box-shadow: none;
+        border: 2px solid black;
+    }
 }
 
 @media (max-width:450px) {
