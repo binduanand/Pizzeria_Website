@@ -237,5 +237,8 @@
     .cart-item .quantity{
         font-size: 0.6rem;
     }
+    .banner-section{
+        flex-direction: column;
+    }
 }
 
