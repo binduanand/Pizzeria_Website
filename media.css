@@ -172,6 +172,12 @@
  .banner-section{
         flex-direction: column;
     }
+.banner-section img{
+    width: 40%;
+}
+.banner-section figcaption{
+    font-size: 0.6rem;
+}
 }
 
 @media (max-width:450px) {
