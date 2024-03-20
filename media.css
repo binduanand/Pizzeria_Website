@@ -172,10 +172,10 @@
  .banner-section{
         flex-direction: column;
     }
-.banner-section img{
+.banner-section figure img{
     width: 40%;
 }
-.banner-section figcaption{
+.banner-section figure figcaption{
     font-size: 0.6rem;
 }
 }
