@@ -133,12 +133,7 @@
     font-size: 0.7rem;
     font-weight: 400;
 }
-.item select{
-    font-size: 0.4rem;
-}
-.item option{
-    height: max-content;
-}
+
 .add_to_cart{
     font-size: 0.7rem;
 }
@@ -234,9 +229,7 @@
         font-size: 0.55rem;
         font-weight: 400;
      }
-     .item select{
-        font-size: 0.4rem;
-    }
+
     .bestseller-items img{
         width: 100px;
         height: 100px;
