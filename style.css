@@ -340,23 +340,13 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-.item select{
-    border: none;
-    padding: 0px;
-    border-radius: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 0.6rem;
-}
-.item option{
-    height: max-content;
-}
 
 .item p{
     font-size: 0.9rem;
     font-weight: 600;
     text-align: center;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 10%;
     width: 75%;
     display: none;
