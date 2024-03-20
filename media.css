@@ -169,14 +169,15 @@
     padding: auto 0px;
     margin-right: 3px;
 }
- .banner-section{
+.banner-section{
         flex-direction: column;
     }
 .banner-section figure img{
     width: 40%;
 }
-.banner-section figure figcaption{
-    font-size: 0.6rem;
+.banner-section figure {
+    display: flex;
+    flex-direction: row;
 }
 }
 
