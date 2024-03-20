@@ -176,7 +176,6 @@
 .banner-section{
     flex-direction: column;
     justify-content:space-around;
-    height:100%;
 }
 .banner-section figure img{
     width: 30%;
