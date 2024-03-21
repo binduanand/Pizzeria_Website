@@ -52,7 +52,7 @@ cartBtn.onclick = () => {
 }
 
 document.querySelector("#cart-close-btn").onclick = closeModal;
-document.querySelector("#start-shopping").onclick = closeModal;
+
 //cart modal
 
 //reviews
