@@ -88,7 +88,7 @@ function updateCart() {
         });
         
     } else {
-        cartContent.innerHTML = "IS EMPTY <button id='start-shopping'>Add items</button>";
+        cartContent.innerHTML = "IS EMPTY <button id='start-shopping' onclick='closeModal'>Add items</button>";
         document.querySelector(".place-order-section").style.display = "none";
     }
 }
